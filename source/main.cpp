@@ -1,12 +1,25 @@
 #include <iostream>
+#include <vector>
+
 #include <SDL.h>
+
+#include "App.h"
 
 int main(int argc, char *args[])
 {
-	auto result = SDL_Init(SDL_INIT_VIDEO);
+	std::cout << "CGBEmu" << std::endl;
 
-    std::cout << "CGBEmu" << std::endl;
+	App app;
 
-	SDL_Quit();
-    return result;
+	app.Init();
+
+	while (app.IsRunning())
+	{
+		app.Update();
+	}
+	
+	app.Destroy();
+
+    return 0;
 }
+
