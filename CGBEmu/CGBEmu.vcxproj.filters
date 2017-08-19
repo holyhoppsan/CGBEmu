@@ -12,9 +12,18 @@
     <ClCompile Include="source\App.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="Origem.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\App.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="Cabeçalho.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>
