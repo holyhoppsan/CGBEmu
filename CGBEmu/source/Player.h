@@ -4,6 +4,7 @@ class Player
 public:
 	Player();
 	~Player();
+
 	void set_values();
 	int area() const;
 

@@ -2,6 +2,8 @@
 #include <iostream>
 
 Player::Player()
+	: width(0)
+	, height(0)
 {
 
 }
