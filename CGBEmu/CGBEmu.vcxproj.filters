@@ -17,5 +17,8 @@
     <ClInclude Include="source\App.h">
       <Filter>source</Filter>
     </ClInclude>
+    <ClInclude Include="source\Arithmetic.h">
+      <Filter>source</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
