@@ -1,19 +1,16 @@
+#include "Player.h"
 #include <iostream>
-class Player
+
+Player::Player()
 {
-	int width;
-	int height;
-public:
-	Player();
-	~Player();
-	void set_values();
-	int area() { return width*height; }
-};
+
+}
 
 Player::~Player()
 {
 	
 }
+
 void Player::set_values() {
 
 	std::cout << "Please enter width: ";
@@ -21,4 +18,9 @@ void Player::set_values() {
 	std::cout << "Please enter height: ";
 	std::cin >> height;
 	std::cout << "area:"<< width*height;
+}
+
+int Player::area() const
+{ 
+	return width*height; 
 }

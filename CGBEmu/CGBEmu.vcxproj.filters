@@ -12,7 +12,7 @@
     <ClCompile Include="source\App.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="Origem.cpp">
+    <ClCompile Include="source\Player.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
@@ -20,10 +20,7 @@
     <ClInclude Include="source\App.h">
       <Filter>source</Filter>
     </ClInclude>
-    <ClInclude Include="Cabeçalho.h">
-      <Filter>source</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="source\Player.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>
