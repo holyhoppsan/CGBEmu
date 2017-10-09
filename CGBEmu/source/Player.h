@@ -1,24 +1,27 @@
+#pragma once
+
 #include <iostream>
+
 class Player
 {
-	int width;
-	int height;
 public:
-	Player();
+	Player();//default constructor
+	Player(int x, int y, int w, int h);//additional constructor
 	~Player();
 	void set_values();
-	int area() { return width*height; }
+	int get_x();
+	int get_y();
+	int get_width();
+	int get_height();
+	void move_left();
+	void move_right();
+	void move_up();
+	void move_down();
+	void set_coordinates();
+
+private:
+	int width;
+	int height;
+	int pos_x;
+	int pos_y;
 };
-
-Player::~Player()
-{
-	
-}
-void Player::set_values() {
-
-	std::cout << "Please enter width: ";
-	std::cin >> width;
-	std::cout << "Please enter height: ";
-	std::cin >> height;
-	std::cout << "area:"<< width*height;
-}
