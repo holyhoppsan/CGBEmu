@@ -25,6 +25,7 @@ private:
 
 	void PrintRendererInfo() const;
 	void PrintFramerate() const;
+	void moverplayers(unsigned int h);
 	
 	bool m_Running;
 
@@ -33,6 +34,7 @@ private:
 	SDL_Texture* m_Texture;
 
 	Player user;
+	Player user2;
 
 	std::vector< unsigned char > m_ScreenBuffer;
 
