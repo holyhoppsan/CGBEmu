@@ -164,18 +164,25 @@ void App::moverplayers(unsigned int h)
 				}
 				break;
 				*/
-			case SDLK_UP:	user.move_up(); break;
+				case SDLK_UP:	user.move_up(); break;
 
-			case SDLK_DOWN: {
-				if (user.get_y() + h < WindowHeight - 1)
-				{
-					user.move_down();
+				case SDLK_DOWN: {
+					if (user.get_y() + h < WindowHeight - 1)
+					{
+						user.move_down();
+					}
+				} break;
+				
+				case SDLK_w:	user2.move_up(); break;
+
+				case SDLK_s: {
+					if (user2.get_y() + h < WindowHeight - 1)
+					{
+						user2.move_down();
+					}
 				}
 			}
-							break;
-			}
-		}
-						  break;
+		} break;
 		}
 	}
 	m_FrameEndTime = SDL_GetPerformanceCounter();
