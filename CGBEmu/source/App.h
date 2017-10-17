@@ -2,6 +2,7 @@
 
 #include <SDL.h>
 #include <vector>
+#include "Player.h"
 
 constexpr int WindowWidth = 160;
 constexpr int WindowHeight = 144;
@@ -24,12 +25,16 @@ private:
 
 	void PrintRendererInfo() const;
 	void PrintFramerate() const;
-
+	void moverplayers(unsigned int h);
+	
 	bool m_Running;
 
 	SDL_Window* m_Window;
 	SDL_Renderer* m_Renderer;
 	SDL_Texture* m_Texture;
+
+	Player user;
+	Player user2;
 
 	std::vector< unsigned char > m_ScreenBuffer;
 
